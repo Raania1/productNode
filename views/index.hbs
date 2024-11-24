@@ -1,0 +1,14 @@
+<h1>Liste des Produits</h1>
+<div class="produits">
+    {{#each produit}}
+    <div class="produit">
+        <img src="{{this.image}}" alt="{{this.nom}}" />
+        <h2>{{this.nom}}</h2>
+        <p>Prix : {{this.prix}} DT</p>
+        {{!-- <div class="like-container">
+            <button>Like</button>
+            <h5>(<span>0</span>)</h5>
+        </div> --}}
+    </div>
+    {{/each}}
+</div>
